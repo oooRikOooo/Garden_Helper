@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/toolbarColor">
+
+
+    <TextView
+        android:id="@+id/notes_title"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:text="@string/notes_title"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginStart="42dp"
+        android:background="@drawable/rounded_background_title"
+        android:fontFamily="@font/roboto_light"
+        />
+
+</androidx.appcompat.widget.Toolbar>

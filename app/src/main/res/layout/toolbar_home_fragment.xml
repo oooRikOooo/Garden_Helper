@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/toolbarColor"
+    android:id="@+id/toolBar"
+    app:title=" ">
+
+    <ImageButton
+        android:id="@+id/image_button_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/profile"
+        android:background="@drawable/account_button_style"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24_green"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="start"
+        android:layout_marginEnd="25dp"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="250dp"
+        android:layout_height="31dp"
+        android:queryBackground="@android:color/transparent"
+        app:iconifiedByDefault="false"
+        android:background="@drawable/background_search_view"
+        android:queryHint="Пошук..."
+        />
+
+    <ImageButton
+        android:id="@+id/image_button_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/favourites_button_style"
+        android:clickable="true"
+        android:contentDescription="@string/favourites"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+</androidx.appcompat.widget.Toolbar>
